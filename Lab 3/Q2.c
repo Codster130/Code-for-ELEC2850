@@ -3,65 +3,65 @@
 
 int main()
 {
-    char input;
-    float number1, number2, ans;
+    char input;                    // declare variable for user input to select operation with a lowercase letter
+    float number1, number2, ans;   // declare variables for all needed variables for each operation
     printf("For absolute value of a number, press 'a'.\n \
             For maximum of two numbers, press 'm'.\n \
             For minimum of two numbers, press 'n'.\n \
             For sum of two numbers, press 's'.\n \
             For difference of two numbers, press 'd'.\n \
             For square of a number, press 'q'.\n \
-            Enter your choice: ");
-    scanf("%c", &input);
+            Enter your choice: "); // prompt user to select which operation they want to perform
+    scanf("%c", &input);           // get users choice of operation
 
-    switch (input)
+    switch (input) // switch statement to determine which operation to perform based on user input
     {
-    case 'a':
-        printf("Enter a number: ");
+    case 'a':                       // absolute value
+        printf("Enter a number: "); // collect number and preform absolute value operation
         scanf("%f", &number1);
         ans = abs(number1);
-        printf("The absolute value of the number is %.2f\n", ans);
+        printf("The absolute value of the number is %.2f\n", ans); // print the completed operation
         break;
-    case 'm':
-        printf("Enter your first number: ");
+    case 'm':                                // maximum
+        printf("Enter your first number: "); // collect two numbers and preform maximum operation
         scanf("%f", &number1);
         printf("Enter your second number: ");
         scanf("%f", &number2);
         ans = fmax(number1, number2);
-        printf("The maximum of your two numbers is %.2f\n", ans);
+        printf("The maximum of your two numbers is %.2f\n", ans); // print the completed operation
         break;
-    case 'n':
-        printf("Enter your first number: ");
+    case 'n':                                // minimum
+        printf("Enter your first number: "); // collect two numbers and preform minimum operation
         scanf("%f", &number1);
         printf("Enter your second number: ");
         scanf("%f", &number2);
         ans = fmin(number1, number2);
-        printf("The minimum of your two numbers is %.2f\n", ans);
+        printf("The minimum of your two numbers is %.2f\n", ans); // print the completed operation
         break;
-    case 's':
-        printf("Enter your first number: ");
+    case 's':                                // sum
+        printf("Enter your first number: "); // collect two numbers and preform sum operation
         scanf("%f", &number1);
         printf("Enter your second number: ");
         scanf("%f", &number2);
         ans = number1 + number2;
-        printf("The sum of your two numbers is %.2f\n", ans);
+        printf("The sum of your two numbers is %.2f\n", ans); // print the completed operation
         break;
-    case 'd':
-        printf("Enter the number to be subtracted from: ");
+    case 'd':                                               // difference
+        printf("Enter the number to be subtracted from: "); // collect two numbers and preform difference operation
         scanf("%f", &number1);
         printf("Enter the amount to be subtracted: ");
         scanf("%f", &number2);
         ans = number1 - number2;
-        printf("The difference of your two numbers is %.2f\n", ans);
+        printf("The difference of your two numbers is %.2f\n", ans); // print the completed operation
         break;
-    case 'q':
-        printf("Enter your number: ");
+    case 'q':                          // square
+        printf("Enter your number: "); // collect number and preform square operation
         scanf("%f", &number1);
         ans = pow(number1, 2);
-        printf("The square of your number is %.2f\n", ans);
+        printf("The square of your number is %.2f\n", ans); // print the completed operation
         break;
     default:
-        printf("Invalid input (Must be lowercase letter)\n");
+        printf("Invalid input (Must be lowercase letter)\n"); // print to user that their input was invalid
         break;
     }
 }
