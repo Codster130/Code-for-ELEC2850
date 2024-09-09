@@ -2,7 +2,7 @@
 
 int main()
 {
-    float temperature;                                                              // initialize variable temperature for user to input their fluids temperature
+    float temperature = 0;                                                          // initialize variable temperature for user to input their fluids temperature
     printf("Enter the boiling point of your fluid: ");                              // prompt user to input the boiling point of their fluid
     scanf("%f", &temperature);                                                      // store the boiling point of the fluid in the variable temperature
     if (temperature <= ((100 * 0.05) + 100) && temperature >= (100 - (100 * 0.05))) // if the temperature is within 5% of the boiling point of water

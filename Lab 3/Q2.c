@@ -3,16 +3,16 @@
 
 int main()
 {
-    char input;                    // declare variable for user input to select operation with a lowercase letter
-    float number1, number2, ans;   // declare variables for all needed variables for each operation
+    char input;                      // declare variable for user input to select operation with a lowercase letter
+    float number1, number2, ans = 0; // declare variables for all needed variables for each operation
     printf("For absolute value of a number, press 'a'.\n \
             For maximum of two numbers, press 'm'.\n \
             For minimum of two numbers, press 'n'.\n \
             For sum of two numbers, press 's'.\n \
             For difference of two numbers, press 'd'.\n \
             For square of a number, press 'q'.\n \
-            Enter your choice: "); // prompt user to select which operation they want to perform
-    scanf("%c", &input);           // get users choice of operation
+            Enter your choice: ");   // prompt user to select which operation they want to perform
+    scanf("%c", &input);             // get users choice of operation
 
     switch (input) // switch statement to determine which operation to perform based on user input
     {
