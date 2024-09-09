@@ -29,4 +29,5 @@ int main()
     {
         printf("The fluid is unknown.\n"); // if the temperature is not within 5% of any of the boiling points, print to the user that the fluid is unknown
     }
+    return 0; // quits program nicely
 }

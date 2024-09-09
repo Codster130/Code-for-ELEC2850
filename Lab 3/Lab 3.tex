@@ -1,0 +1,83 @@
+\documentclass{article}
+
+
+\usepackage{authblk}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=0.5in,
+            right=0.5in,
+            top=0.125in,
+            bottom=0.125in,
+            footskip=.25in]{geometry}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=C
+}
+
+
+\title{Lab Exercise 3: Selection Statements (if/else if and switch)}
+\author{Cody Raposa}
+\affil{ELEC2850 Microcontrollers Using C Programming}
+
+\begin{document}
+\maketitle
+\begin{flushleft}
+  \section{Problem Statement}
+  Given a table of boiling points of several substances, create a program that gets the user's \
+  boiling point of their fluid (in \textdegree Celcius) and tells the user what substace their fluid is \
+  as long as the substance is within 5\% of the given boiling point. When the substance is unkown, let the user know that.
+  \begin{table}[ht]
+    \caption{Expected boiling points of substances.}
+    \begin{center}
+      \begin{tabular}{ c c }
+        Substance & Normal boiling point (\textdegree C) \\
+        \hline
+        Water     & 100                                  \\
+        Mercury   & 357                                  \\
+        Copper    & 1187                                 \\
+        Silver    & 2193                                 \\
+        Gold      & 2660                                 \\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+  %\section{Assumptions}
+  \section{Algorithm}
+  %\section{Pseudocode}
+  %\section{Flowchart}
+  \section{Output}
+  \begin{figure}[h!] %h (here) – same location  t (top) – top of page  b (bottom) – bottom of page  p (page) – on an extra page  ! (override) – will force the specified location
+    \centering
+    %\begin{subfigure}[b]{0.4\linewidth}
+    %\includegraphics[width=\linewidth]{coffee.jpg}
+    %\caption{Coffee.}
+    %\includegraphics[width=\linewidth]{coffee.jpg}
+    \caption{Coffee.}
+  \end{figure}
+  \section{Code}
+  \lstinputlisting[style=CStyle]{Q1.c}
+\end{flushleft}
+\end{document}

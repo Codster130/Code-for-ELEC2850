@@ -64,4 +64,5 @@ int main()
         printf("Invalid input (Must be lowercase letter)\n"); // print to user that their input was invalid
         break;
     }
+    return 0; // quits program nicely
 }
