@@ -2,8 +2,9 @@
 
 void main()
 {
-    float innerDiameter, outerDiameter, thickness, density, quantity, shipping = 0; // declare variables
-    printf("Enter the inner diameter of the washer: ");                             // prompt user for inner diameter
+    float innerDiameter, outerDiameter, thickness, density = 0; // declare variables
+    int shipping, quantity =0;                                                        // declare variables
+	printf("Enter the inner diameter of the washer: ");                             // prompt user for inner diameter
     scanf("%f", &innerDiameter);                                                    // store inner diameter in variable
     printf("Enter the outer diameter of the washer: ");                             // prompt user for outer diameter
     scanf("%f", &outerDiameter);                                                    // store outer diameter in variable
@@ -12,9 +13,9 @@ void main()
     printf("Enter the material density in grams per cubic centimeter: ");           // prompt user for density
     scanf("%f", &density);                                                          // store density in variable
     printf("Enter the quantity of washers: ");                                      // prompt user for quantity
-    scanf("%f", &quantity);                                                         // store quantity in variable
+    scanf("%d", &quantity);                                                         // store quantity in variable
     printf("Do you want expedited shipping (1 for yes, 0 for no): ");               // prompt user for shipping preference
-    scanf("%f", &shipping);                                                         // store shipping preference in variable
+    scanf("%d", &shipping);                                                         // store shipping preference in variable
     float outerArea = 0.25 * 3.14159 * (outerDiameter * outerDiameter);             // calculate outer area 1/4 * pi * d^2
     float innerArea = 0.25 * 3.14159 * (innerDiameter * innerDiameter);             // calculate inner area 1/4 * pi * d^2
     float weight = (outerArea - innerArea) * thickness * density;                   // calculate weight of one washer

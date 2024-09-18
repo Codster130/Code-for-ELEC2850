@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.4)  16 SEP 2024 13:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.4)  17 SEP 2024 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -193,11 +193,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Q2flowchart.png, id=11, 134.5025pt x 536.0025pt>
+<Q2flowchart.png, id=11, 175.15437pt x 421.575pt>
 File: Q2flowchart.png Graphic file (type png)
 <use Q2flowchart.png>
 Package pdftex.def Info: Q2flowchart.png  used on input line 65.
-(pdftex.def)             Requested size: 60.52554pt x 241.1989pt.
+(pdftex.def)             Requested size: 78.81874pt x 189.70699pt.
 <Q2Output.png, id=13, 274.52562pt x 39.14626pt>
 File: Q2Output.png Graphic file (type png)
 <use Q2Output.png>
@@ -227,7 +227,7 @@ File: Q3Output.png Graphic file (type png)
 <use Q3Output.png>
 Package pdftex.def Info: Q3Output.png  used on input line 91.
 (pdftex.def)             Requested size: 510.78412pt x 130.38753pt.
- (./Q3.c [3 <./Q3flowchart.png> <./Q3Output.png>]) [4] (./Assignment 1.aux)
+ [3 <./Q3flowchart.png> <./Q3Output.png>] (./Q3.c) [4] (./Assignment 1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -236,13 +236,13 @@ L3 programming layer <2024-02-20>
 Here is how much of TeX's memory you used:
  4280 strings out of 474116
  62742 string characters out of 5747718
- 2151190 words of memory out of 5000000
+ 2210190 words of memory out of 5000000
  26625 multiletter control sequences out of 15000+600000
  560827 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,316b,1838s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,316b,1612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on "Assignment 1.pdf" (4 pages, 246131 bytes).
+Output written on "Assignment 1.pdf" (4 pages, 241182 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
