@@ -37,7 +37,7 @@
 }
 
 
-\title{Assignment \#1 - Standard I/O, Math, and if/else}
+\title{Lab Excersize \#2 - Standard I/O, Math, and if/else}
 \author{Cody Raposa}
 \affil{ELEC2850 Microcontrollers Using C Programming}
 
@@ -45,12 +45,32 @@
 \maketitle
 \begin{flushleft}
 	\section{Problem Statement}
-	Test
+	Create a program that estimates the shipping costs for a quantity of washers. It must be based on the weight of the specified washer.
+	To find the weight of the washer, you must calculate it from the users input of: inner diameter, outer diameter, thickness, material density, and quantity ordered.
+	If the user wants expedited shipping, the program must add an additional 12\% to the total cost and tell the user the shipping speed.
 	%\section{Assumptions}
 	%\section{Pseudocode}
-	%\section{Flowchart}
+	\section{Flowchart}
+	\begin{figure}[!h]
+		\begin{centering}
+			\includegraphics[scale=0.78]{Lab_2_flowchart.png}
+			\caption{Output without expedited shipping}
+		\end{centering}
+	\end{figure}
 	\section{Output}
+	\begin{figure}[!h]
+		\begin{centering}
+			\includegraphics[width=\linewidth]{Lab_2_output_1.png}
+			\caption{Output without expedited shipping}
+		\end{centering}
+	\end{figure}
+	\begin{figure}[!h]
+		\begin{centering}
+			\includegraphics[width=\linewidth]{Lab_2_output_2.png}
+			\caption{Output with expedited shipping}
+		\end{centering}
+	\end{figure}
 	\section{Code}
-	\lstinputlisting[style=CStyle]{HelloWorld.c}
+	\lstinputlisting[style=CStyle]{Washer Calc.c}
 \end{flushleft}
 \end{document}
