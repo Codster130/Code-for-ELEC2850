@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <ctype.h>
 
 int main()
 {
@@ -14,15 +15,15 @@ int main()
             Enter your choice: ");	 // prompt user to select which operation they want to perform
 	scanf("%c", &input);			 // get users choice of operation
 
-	switch (input) // switch statement to determine which operation to perform based on user input
+	switch(toupper(input)) // switch statement to determine which operation to perform based on user input
 	{
-	case 'a':						// absolute value
+	case 'A':						// absolute value
 		printf("Enter a number: "); // collect number and preform absolute value operation
 		scanf("%f", &number1);
 		ans = abs(number1);
 		printf("The absolute value of the number is %.2f\n", ans); // print the completed operation
 		break;
-	case 'm':								 // maximum
+	case 'M':								 // maximum
 		printf("Enter your first number: "); // collect two numbers and preform maximum operation
 		scanf("%f", &number1);
 		printf("Enter your second number: ");
@@ -30,7 +31,7 @@ int main()
 		ans = fmax(number1, number2);
 		printf("The maximum of your two numbers is %.2f\n", ans); // print the completed operation
 		break;
-	case 'n':								 // minimum
+	case 'N':								 // minimum
 		printf("Enter your first number: "); // collect two numbers and preform minimum operation
 		scanf("%f", &number1);
 		printf("Enter your second number: ");
@@ -38,7 +39,7 @@ int main()
 		ans = fmin(number1, number2);
 		printf("The minimum of your two numbers is %.2f\n", ans); // print the completed operation
 		break;
-	case 's':								 // sum
+	case 'S':								 // sum
 		printf("Enter your first number: "); // collect two numbers and preform sum operation
 		scanf("%f", &number1);
 		printf("Enter your second number: ");
@@ -46,7 +47,7 @@ int main()
 		ans = number1 + number2;
 		printf("The sum of your two numbers is %.2f\n", ans); // print the completed operation
 		break;
-	case 'd':												// difference
+	case 'D':												// difference
 		printf("Enter the number to be subtracted from: "); // collect two numbers and preform difference operation
 		scanf("%f", &number1);
 		printf("Enter the amount to be subtracted: ");
@@ -54,14 +55,14 @@ int main()
 		ans = number1 - number2;
 		printf("The difference of your two numbers is %.2f\n", ans); // print the completed operation
 		break;
-	case 'q':						   // square
+	case 'Q':						   // square
 		printf("Enter your number: "); // collect number and preform square operation
 		scanf("%f", &number1);
 		ans = pow(number1, 2);
 		printf("The square of your number is %.2f\n", ans); // print the completed operation
 		break;
 	default:
-		printf("Invalid input (Must be lowercase letter)\n"); // print to user that their input was invalid
+		printf("Invalid input\n"); // print to user that their input was invalid
 		break;
 	}
 	return 0; // quits program nicely

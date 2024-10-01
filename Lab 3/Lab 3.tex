@@ -1,6 +1,6 @@
 \documentclass{article}
 
-
+\usepackage{graphicx}
 \usepackage{authblk}
 \usepackage{listings}
 \usepackage{xcolor}
@@ -8,8 +8,8 @@
             bindingoffset=0.2in,
             left=0.5in,
             right=0.5in,
-            top=0.125in,
-            bottom=0.125in,
+            top=0.5in,
+            bottom=0.5in,
             footskip=.25in]{geometry}
 
 \definecolor{mGreen}{rgb}{0,0.6,0}
@@ -65,19 +65,120 @@
     \end{center}
   \end{table}
   %\section{Assumptions}
-  \section{Algorithm}
+  %\section{Algorithm}
+  \section{Analysis}
+  \subsection{Inputs}
+  Boiling Point of fluid (float)
+  \subsection{Outputs}
+  Fluid with boiling point +- 5\% of given boiling point (string)
+  %\subsection{Formulas}
   %\section{Pseudocode}
-  %\section{Flowchart}
-  \section{Output}
-  \begin{figure}[!ht] %h (here) – same location  t (top) – top of page  b (bottom) – bottom of page  p (page) – on an extra page  ! (override) – will force the specified location
-    \centering
-    %\begin{subfigure}[b]{0.4\linewidth}
-    %\includegraphics[width=\linewidth]{coffee.jpg}
-    %\caption{Coffee.}
-    %\includegraphics[width=\linewidth]{coffee.jpg}
-    \caption{Coffee.}
+  \newpage
+  \section{Flowchart}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q1_flowchart.png}
+      \caption{Flowchart for Question 1}
+    \end{centering}
   \end{figure}
+  \newpage
+  \section{Output}
+    \begin{figure}[!h]
+      \begin{centering}
+        \includegraphics[scale=1]{Q1_p1.png}
+        \caption{Output with 341.5 degrees as boiling point}
+      \end{centering}
+    \end{figure}
+    \begin{figure}[!h]
+      \begin{centering}
+        \includegraphics[scale=1]{Q1_p2.png}
+        \caption{Output with 102 degrees as boiling point}
+      \end{centering}
+    \end{figure}
+  You cannot handle this problem with a switch case as you cannot use ranges in a switch case.
   \section{Code}
   \lstinputlisting[style=CStyle]{Q1.c}
+  \newpage
+  \section{Part 2 Problem Statement}
+  Use a switch to create one promgram the performs the following operations:
+  \begin{itemize}
+    \item Absolute value
+    \item Maximum
+    \item Minimum
+    \item Sum
+    \item Difference
+    \item Square
+  \end{itemize}
+  \section{Analysis}
+  \subsection{Inputs}
+  What action the user wants to perform (char)
+  The numbers the user wants the program to perform the action on (float)
+  \subsection{Outputs}
+  The result of the action (float)
+  \subsection{Formulas}
+  \begin{itemize}
+    \item Absolute value: $|x|$
+    \item Maximum: $\max(x, y)$
+    \item Minimum: $\min(x, y)$
+    \item Sum: $x + y$
+    \item Difference: $x - y$
+    \item Square: $x^2$
+  \end{itemize}
+  \newpage
+  \section{Flowchart}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=0.55]{Q2_flowchart.png}
+      \caption{Flowchart for Question 2}
+    \end{centering}
+  \end{figure}
+  \newpage
+  \section{Output}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_p1.png}
+      \caption{Test case for Absolute value}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_p2.png}
+      \caption{Test case for Maximum}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_p3.png}
+      \caption{Test case for Minimum}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_p4.png}
+      \caption{Test case for Sum}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_p5.png}
+      \caption{Test case for Difference}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_p6.png}
+      \caption{Test case for Square}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_p7.png}
+      \caption{Invalid input}
+    \end{centering}
+  \end{figure}
+  \newpage
+  \newpage
+  \section{Code}
+  \lstinputlisting[style=CStyle]{Q2.c}
 \end{flushleft}
 \end{document}
