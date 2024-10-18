@@ -1,0 +1,96 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=0.5in,
+            right=0.5in,
+            top=0.5in,
+            bottom=0.5in,
+            footskip=.25in]{geometry}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=C
+}
+
+
+\title{Assignment 4: Functions}
+\author{Cody Raposa}
+\affil{ELEC2850 Microcontrollers Using C Programming}
+
+\begin{document}
+\maketitle
+\begin{flushleft}
+  \section{Q1 Output}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q1_output.png}
+      \caption{Test cases for the program}
+    \end{centering}
+  \end{figure}
+  \newpage
+  \section{Code}
+  \lstinputlisting[style=CStyle]{Q1.c}
+  \newpage
+  \section{Q2 Problem Statement}
+  Create a program that wil calculate the temperature at a given depth in km. The program should prompt the user to enter the depth in km, then calculate the temperature at that depth using the formula $T = 10 \times depth + 20$, for celsius, and $T = 1.8 \times depth + 32$, for fahrenheit. The program should then display the temperature in both celsius and fahrenheit.
+  %\section{Assumptions}
+  %\section{Algorithm}
+  \section{Analysis}
+  \subsection{Inputs}
+  depth (float)
+  \subsection{Outputs}
+  Celsius, fahrenheit (floats)
+  \subsection{Formulas}
+  Equation for celsius: $T = 10 \times depth + 20$\\
+  Equation for fahrenheit: $T = 1.8 \times depth + 32$
+  %\section{Pseudocode}
+  \section{Flowchart}
+    \begin{figure}[!h]
+      \begin{centering}
+        \includegraphics[scale=0.75]{Q2_Flowchart.png}
+        \caption{Flowchart for Q2}
+      \end{centering}
+    \end{figure}
+    \newpage
+  \section{Output}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_output1.png}
+      \caption{A test case for the program}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=1]{Q2_output2.png}
+      \caption{Another test case for the program}
+    \end{centering}
+  \end{figure}
+  \section{Code}
+  \lstinputlisting[style=CStyle]{Q2.c}
+\end{flushleft}
+\end{document}
