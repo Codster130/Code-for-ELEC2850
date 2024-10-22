@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=0.5in,
+            right=0.5in,
+            top=0.5in,
+            bottom=0.5in,
+            footskip=.25in]{geometry}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=C
+}
+
+
+\title{Lab Exercise 6: Microcontroller I/O}
+\author{Cody Raposa, Josh Johnson}
+\affil{ELEC2850 Microcontrollers Using C Programming}
+
+\begin{document}
+\maketitle
+\begin{flushleft}
+  %\section{Problem Statement}
+  %\section{Assumptions}
+  %\section{Algorithm}
+  %\section{Analysis}
+  %\subsection{Inputs}
+  %\subsection{Outputs}
+  %\subsection{Formulas}
+  %\section{Pseudocode}
+  \section{Test Cases}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=0.2]{IMG_3756.jpeg}
+      \caption{The program running on the DE-10}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=0.2]{IMG_3757.jpeg}
+      \caption{The program running on the DE-10}
+    \end{centering}
+  \end{figure}
+  \begin{figure}[!h]
+    \begin{centering}
+      \includegraphics[scale=0.2]{IMG_3758.jpeg}
+      \caption{The program running on the DE-10}
+    \end{centering}
+  \end{figure}
+  \section{Llibrary File}
+    \lstinputlisting[style=CStyle]{address_map.h}
+  \section{Code}
+    \lstinputlisting[style=CStyle]{Main.c}
+\end{flushleft}
+\end{document}
