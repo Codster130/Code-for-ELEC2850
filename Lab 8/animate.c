@@ -26,14 +26,14 @@ int main()
 	y_dir = 1; // move right initially
 
 	// rectangle coordinates
-	int x1 = 140;
-	int y1 = 100;
-	int x2 = 180;
-	int y2 = 140;
-	int x21 = 152;
-	int x22 = 168;
-	int y21 = 113;
-	int y22 = 127;
+	int x1 = 140;  // Outer box coordinate (resolution_x/2) - (box_width/2) (box width = 40)
+	int y1 = 100;  // Outer box coordinate (resolution_y/2) - (box_width/2) (box width = 40)
+	int x2 = 180;  // Outer box coordinate (resolution_x/2) + (box_width/2) (box width = 40)
+	int y2 = 140;  // Outer box coordinate (resolution_y/2) + (box_width/2) (box width = 40)
+	int x21 = 152; // Inner box coordinate (resolution_x/2) - (box_width/2) (box width = 16)
+	int x22 = 168; // Inner box coordinate (resolution_x/2) + (box_width/2) (box width = 16)
+	int y21 = 113; // Inner box coordinate (resolution_y/2) - (box_width/2) (box width = 16)
+	int y22 = 127; // Inner box coordinate (resolution_y/2) + (box_width/2) (box width = 16)
 
 	// int ALT_x = 1;
 
@@ -47,8 +47,8 @@ int main()
 
 	clearScreen();
 
-	VGA_box(x1, y1, x2, y2, 0x001F);
-	VGA_box(x21, y21, x22, y22, 0xFA00);
+	VGA_box(x1, y1, x2, y2, 0x001F);	 // draw the rectangle in the center in blue
+	VGA_box(x21, y21, x22, y22, 0xFA00); // draw the rectangle in the center in red
 
 	while (1)
 	{
@@ -60,7 +60,7 @@ int main()
 		// this will set timeout = 1
 		// which means you will move past the barrier
 
-		VGA_box(x21, y21, x22, y22, 0x0); // clear screen
+		VGA_box(x21, y21, x22, y22, 0x0); // remove the red box with black
 		y21 -= y_dir;					  // move the rectangle up
 		y22 -= y_dir;
 
@@ -71,8 +71,8 @@ int main()
 		{
 			y_dir = -(y_dir); // change direction
 		}
-		VGA_box(x1, y1, x2, y2, 0x001F); // draw in new position
-		VGA_box(x21, y21, x22, y22, 0xFA00);
+		VGA_box(x1, y1, x2, y2, 0x001F);	 // draw in new position to remove the black
+		VGA_box(x21, y21, x22, y22, 0xFA00); // draw in new position 1 pixel higher/lower
 
 		timeout = 0; // DO NOT FORGET TO RESET THIS
 	}
